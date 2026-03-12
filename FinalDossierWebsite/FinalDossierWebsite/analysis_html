@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<section class="sub-header">
+
+<nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<a href="index_html"><img src="images/logo.png" class="logo"></a>
+<div class="nav-links" id="navLinks">
+    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+    <ul>
+    <li><a href="context_html">Context</a></li>
+    <li><a href="interview_html">Interview</a></li>
+    <li><a href="analysis_html">Analysis</a></li>
+</ul>
+</div>
+<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+</nav>
+<h2>Analysis</h2>
+</div>
+</section>
+
+<!--Context Content-->
+
+<section class="snapshot">
+    <div class="row">
+        <div class="snapshot-col">  
+    <h1>Technical Skill Snapshot</h1>
+    <p>snapshot of technical skill</p>
+    </div>
+    <div class="snapshot-col">
+    <img src="images/icon.png">
+    </div>
+</div>
+</section>
+
+<section class="training">
+    <div class="row2">
+        <div class="training-col">
+    <h1>Training Agenda</h1>
+    <p>agenda for training</p>
+    </div>
+    <div class="training-col">
+    <img src="images/icon.png">
+    </div>
+    </div>
+</section>
+
+<section class="laborTrends">
+    <div class="row">
+        <div class="laborTrends-col">
+    <h1>Labor Trends</h1>
+    <p>trends of labor</p>
+   </div>
+   <div class="laborTrends-col">
+    <img src="images/icon.png">
+</div>
+</div>
+</section>
+
+<!----- endCap ------>
+<section class="endCap">
+    <p>Thank you for visiting our website!</p>
+</section>
+    
+<!------- JavaScript for Toggle Menu ------->
+
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+    
+</body>
+
+</html>
