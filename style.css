@@ -169,7 +169,8 @@ nav .fa-solid{
     padding-bottom: 400px;
 }
 .annotatedBib p{
- text-indent: 100px;
+ text-indent: -26px;
+    padding-left: 26px;
     text-align: left;
 }
 h2{
