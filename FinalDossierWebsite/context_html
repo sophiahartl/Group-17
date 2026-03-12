@@ -15,7 +15,7 @@
 <section class="sub-header">
 
 <nav>
-    <a href="index_html"><img src="images/newlogo.png" class="logo"></a>
+    <a href="index.html"><img src="images/newlogo.png" class="logo"></a>
 <div class="nav-links" id="navLinks">
     <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
     <ul>
