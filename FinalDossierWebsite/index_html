@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
-
-
+    
 <div class="container">
-<nav>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<img src="images/logo.png" class="logo">
-<div class="nav-links" id="navLinks">
+    <nav>
+    <a href="index_html"><img src="images/newlogo.png" class="logo"></a>
+    <div class="nav-links" id="navLinks">
     <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
     <ul>
-    <li><a href="#">Context</a></li>
-    <li><a href="#">Interview</a></li>
-    <li><a href="#">Analysis</a></li>
+    <li><a href="context_html">Context</a></li>
+    <li><a href="interview_html">Interview</a></li>
+    <li><a href="analysis_html">Analysis</a></li>
 </ul>
 </div>
 <i class="fa-solid fa-bars" onclick="showMenu()"></i>
 
-</nav>
-<div class="content">
-    <h1>AI and the LAPL</h1>
-    <p>Our Interview with Patty Valdovinos of LAPL and the future of AI in libraries.</p>
-</div>
+    </nav>
+ <section class="homePage"></section>   
+    <div class="row">
+        <div class="tex-col">
+            <h1>AI and the LAPL</h1>
+            <p>Our Interview with Patty Valdovinos of LAPL and the future of AI in libraries.</p>
+            </div>
+        <div class="homepageImage">
+            <img src="images/homepageImage.png">
+        </div>
+    </div>
+</section>
+   
 <!----- collaborators ------>
 <section class="collaborators">
 <h2>Collaborators</h2>
 
 <div class="row">
    <div class="collab-col">
-<h3>Sophia Hartl</h3>
+        <img src="images/starbaby.gif">
+        <h3>Sophia Hartl</h3>
    </div>
     <div class="collab-col">
-<h3>Sophia González</h3>
+        <img src="images/starbaby.gif">
+        <h3>Sophia González</h3>
    </div>
     <div class="collab-col">
-<h3>Rachel Tofosky</h3>
+        <img src="images/starbaby.gif">
+        <h3>Rachel Tofosky</h3>
    </div>
     <div class="collab-col">
-<h3>Adela Valenzuela</h3>
+        <img src="images/starbaby.gif">
+        <h3>Adela Valenzuela</h3>
    </div>
    
 </div>
