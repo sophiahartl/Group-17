@@ -185,6 +185,10 @@ p{
     line-height: 22px;
     padding: 10px;
 }
+.hangingindent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
 
 /*----- End Cap ------*/
 .endCap{
