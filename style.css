@@ -333,13 +333,6 @@ h1{
     font-weight: 600;
     color: #005587;
 }
-video{
-   width: 720px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: 10px solid #005587;
-    border-style: groove;
 }
 .interviewText{
     width: 100%;
