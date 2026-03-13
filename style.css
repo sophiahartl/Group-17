@@ -258,11 +258,10 @@ h3{
 }
 
 .profContext{
-     width: 100%;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top:1px;
-    padding-bottom: 100px;
+    padding: 1px 40px 100px 40px;
     height: 100vh;
     background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
     background-size: cover;
@@ -274,6 +273,7 @@ h3{
 }
 .profContext-col img{
     width: 50%;
+    padding: 10px;
 }
 .profContext-col h1{
     font-size: 45px;
@@ -281,11 +281,10 @@ h3{
     color: #005587;
 }
 .outlook{
-     width: 100%;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top:1px;
-    padding-bottom: 100px;
+    padding: 1px 40px 100px 40px;
     height: 100vh;
     background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
     background-size: cover;
