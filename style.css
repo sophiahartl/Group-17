@@ -236,16 +236,19 @@ h3{
 }
 
 .overview{
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
-    padding: 1px 10px 100px 10px;
+    text-align: center;
+    padding: 1px 40px 100px 40px;
+    height: 100vh;
     background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
     background-size: cover;
     background-position: center;
 }
 .overview-col{
+    flex-basis: 48%;
+    padding: 30px 20px;
 }
-
 .overview-col img{
     width: 50%;
 }
