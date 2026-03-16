@@ -1,100 +1,404 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/*------ For Index -----*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 60%,rgb(255, 253, 208, 1) 50% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+.sub-header{
+    width: 100%;
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 60%,rgb(255, 253, 208, 1) 50% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+.sub-header h2{
+    padding: 150px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #005587;
     
-<div class="container">
-    <nav>
-    <a href="index.html"><img src="images/newlogo.png" class="logo"></a>
-    <div class="nav-links" id="navLinks">
-    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-    <ul>
-    <li><a href="context.html">Context</a></li>
-    <li><a href="interview.html">Interview</a></li>
-    <li><a href="analysis.html">Analysis</a></li>
-</ul>
-</div>
-<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
 
-    </nav>
- <section class="homePage"></section>   
-    <div class="row">
-        <div class="tex-col">
-            <h1>AI and the LAPL</h1>
-            <p>Our Interview with Patty Valdovinos of LAPL and the future of AI in libraries.</p>
-            </div>
-        <div class="homepageImage">
-            <img src="images/homepageImage.png">
-        </div>
-    </div>
-</section>
-   
-<!----- collaborators ------>
-<section class="collaborators">
-<h2>Collaborators</h2>
-
-<div class="row">
-   <div class="collab-col">
-        <img src="images/starbaby.gif">
-        <h3>Sophia Hartl</h3>
-   </div>
-    <div class="collab-col">
-        <img src="images/starbaby.gif">
-        <h3>Sophia González</h3>
-   </div>
-    <div class="collab-col">
-        <img src="images/starbaby.gif">
-        <h3>Rachel Tofosky</h3>
-   </div>
-    <div class="collab-col">
-        <img src="images/starbaby.gif">
-        <h3>Adela Valenzuela</h3>
-   </div>
-   
-</div>
-
-
-</section>
-
-<!-- annotatedBib-->
-<section class="annotatedBib">
-    <h2>Annotated Bibliography</h2>
-    <p class="hangingindent">American Library Association.<i>Guidelines for the Development and Promotion of Multilingual Collections and Services.</i> Chicago: American Library Association.
-This guideline outlines professional standards for libraries that want to create multilingual collections and services. It covers best practices for collection development, community outreach, and ensuring equitable access to information for multilingual populations. This resource is helpful because it provides an official framework that librarians can follow when designing multilingual services. 
-</p>
-     <p><i>LibVoices</i>. Podcast. Hosted by Jamia Williams and Jamillah R. Gabriel. Various episodes. Started 2020. Accessed March 12, 2026. https://podcasts.apple.com/us/podcast/libvoices/id1502263387.
-	LibVoices is a podcast that features conversations of librarians of color, discussing career experiences, equity challenges, leadership, and community-engaged work. Its episodes help show how librarians approach diversity, representation, and inclusion; topics closely connected to multilingual services and culturally responsive practices in libraries. </p>
-      <p><i>Literacy Across Languages</i>. Podcast. Hosted by Mary Sandoval and Katherine Nelson. Began 2025. Accessed March 12, 2026. https://podcasts.apple.com/us/podcast/literacy-across-languages/id1860605501
-Literacy across languages is a biweekly podcast that discussed multilingual literacy instruction and language acquisition research, offering practical strategies for supporting multilingual learners. While oriented towards educators, the conversations about inclusive language practices and culturally responsive education provide insights relevant to multilingual librarianship, especially when considering how libraries can serve linguistically diverse communities.
-</p>
-       <p>Long Beach City College Library Technician Program. “Library Diversity & Multilingual Collections (Guest Speakers).” YouTube video, 56:42. Posted June 15, 2021. https://www.youtube.com/watch?v=ikDapIcB6FQ&utm 
-	This video from the Long Beach City College Library Technician Program features librarians talking about diversity, equity, inclusion, and multilingual collections in library environments. It highlights how librarians engage with multilingual materials and community needs, which makes it a great resource for understanding real world practices in this field.
-</p>
-    <p>Valdovinos, Patricia. “Author Page.”<i>Los Angeles Public Library</i>. Accessed March 12, 2026. https://www.lapl.org/collections-resources/blogs/lapl/authors/pvaldovinos
-	The Los Angeles Public Library blog page for Patricia Valdovinos highlights posts focused on multilingual collections, reading recommendations, and resources for Spanish-speaking and multilingual communities. The blog provides insight into how libraries curate culturally representative materials and promote multilanguage literature to the public. This resource is helpful because it shows how librarians actively engage with communities and promote diverse collections through outreach and digital content.
-</p>
-
-</section>
-<!----- endCap ------>
-<section class="endCap">
-    <p1>Thank you for visiting our website!</p1>
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 75px;
     
-<!------- JavaScript for Toggle Menu ------->
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    flex-direction: row-reverse;
+}
+.text-col{
+    flex: 1;
+}
 
-<script>
-    var navLinks = document.getElementById("navLinks")
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
-    
-</body>
+.homepageImage{
+    flex: 1;
+    text-align: right;
+}
 
-</html>
+.homepageImage img{
+    width: 550px;
+    height: auto;
+}
+.logo{
+  width: 60px;
+    cursor: pointer;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #005587;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8BB8E8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+
+}
+.collab-col img{
+    width: 90px;
+    height: auto; 
+    padding: 15px;  
+}
+.content{
+    margin-top: 14%;
+    color: #8BB8E8;
+    max-width: 620px;
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+
+/*----- Annotated Bibliography ------*/
+.annotatedBib{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:300px;
+    padding-bottom: 400px;
+}
+.annotatedBib p{
+ text-indent: -26px;
+    padding-left: 26px;
+    padding-top: 36px;
+    text-align: left;
+}
+h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #005587;
+}
+p{
+    color: #005587;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/*----- End Cap ------*/
+.endCap{
+    width: 100%;
+    height: 50vh;
+    text-align: left;
+    background-color: rgba(255, 253, 208, 1);
+    position: relative;   /* important */
+}
+
+.endCap p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/*----- End Cap ------*/
+
+.collaborators{
+     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:400px;
+    padding-bottom: 100px;
+
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #8BB8E8;
+}
+
+h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #8BB8E8;
+}
+
+
+/*----- Context Page ------*/
+
+
+.overview{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    height: 150vh; /*--- changes distance between overview, profcontext, and outlook for some reason----*/
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.overview-col{
+    flex-basis: 48%;
+    padding: 5px 20px;
+}
+.overview-col img{
+    width: 75%;
+}
+.overview-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+
+.profContext{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1px 40px 100px 40px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.profContext-col{
+    flex-basis: 48%;
+    padding: 40px 30px;
+}
+.profContext-col img{
+    width: 65%;
+    padding: 10px;
+}
+.profContext-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+.outlook{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1px 40px 100px 40px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.outlook-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.outlook-col img{
+    width: 75%;
+}
+.outlook-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+.jobMarket{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1px 40px 100px 40px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.jobMarket-col{
+ flex-basis: 48%;
+    padding: 30px 2px;
+}
+.jobMarket-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+h1{
+    font-size: 100px;
+    font-weight: 600;
+    color: #005587;
+}
+
+/*----- Interview Page ------*/
+.patty{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:1px;
+    padding-bottom: 100px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.patty-col{
+     flex-basis: 48%;
+    padding: 30px 2px;
+}
+.patty-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+
+iframe{
+    width: 45%;
+    height: 415px;
+    padding-right: 150px;
+}
+
+.interviewText{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:1px;
+    padding-bottom: 100px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.interviewText h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+    padding-bottom: 50px;
+}
+.interviewText p{
+    padding: 10px 8%;
+    text-align: center;
+}
+/*----- Analysis Page ------*/
+
+.techSnapshot{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1px 40px 100px 40px;
+    height: 120vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.techSnapshot-col{
+    flex-basis: 48%;
+    padding: 30px 20px;
+}
+.techSnapshot-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+.techSnapshot img{
+    width: 850px;
+}
+.training{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:1px;
+    padding-bottom: 100px;
+    height: 90vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.training-col{
+     flex-basis: 48%;
+    padding: 30px 40px;
+}
+.training-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+
+.training-col img{
+    width: 65%;
+}
+.laborTrends{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:1px;
+    padding-bottom: 100px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.laborTrends-col{
+     flex-basis: 48%;
+    padding: 30px 40px;
+}
+.laborTrends-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+.laborTrends-col img{
+    width: 85%;
+}
