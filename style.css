@@ -396,3 +396,401 @@ iframe{
 .laborTrends-col img{
     width: 85%;
 }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/*------ For Index -----*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 60%,rgb(255, 253, 208, 1) 50% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+.sub-header{
+    width: 100%;
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 60%,rgb(255, 253, 208, 1) 50% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+.sub-header h2{
+    padding: 150px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #005587;
+    
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 75px;
+    
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    flex-direction: row-reverse;
+}
+.text-col{
+    flex: 1;
+}
+
+.homepageImage{
+    flex: 1;
+    text-align: right;
+}
+
+.homepageImage img{
+    width: 550px;
+    height: auto;
+}
+.logo{
+  width: 60px;
+    cursor: pointer;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #005587;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8BB8E8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+
+}
+.collab-col img{
+    width: 90px;
+    height: auto; 
+    padding: 15px;  
+}
+.content{
+    margin-top: 14%;
+    color: #8BB8E8;
+    max-width: 620px;
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+
+/*----- Annotated Bibliography ------*/
+.annotatedBib{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:300px;
+    padding-bottom: 400px;
+}
+.annotatedBib p{
+ text-indent: -26px;
+    padding-left: 26px;
+    padding-top: 36px;
+    text-align: left;
+}
+h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #005587;
+}
+p{
+    color: #005587;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/*----- End Cap ------*/
+.endCap{
+    width: 100%;
+    height: 50vh;
+    text-align: left;
+    background-color: rgba(255, 253, 208, 1);
+    position: relative;   /* important */
+}
+
+.endCap p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/*----- End Cap ------*/
+
+.collaborators{
+     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:400px;
+    padding-bottom: 100px;
+
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #8BB8E8;
+}
+
+
+/*----- Context Page ------*/
+
+
+.overview{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    height: 150vh; /*--- changes distance between overview, profcontext, and outlook for some reason----*/
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.overview-col{
+    flex-basis: 48%;
+    padding: 5px 20px;
+}
+.overview-col img{
+    width: 75%;
+}
+.overview-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+
+.profContext{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1px 40px 100px 40px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.profContext-col{
+    flex-basis: 48%;
+    padding: 40px 30px;
+}
+.profContext-col img{
+    width: 65%;
+    padding: 10px;
+}
+.profContext-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+.outlook{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1px 40px 100px 40px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.outlook-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.outlook-col img{
+    width: 75%;
+}
+.outlook-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+.jobMarket{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1px 40px 100px 40px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.jobMarket-col{
+ flex-basis: 48%;
+    padding: 30px 2px;
+}
+.jobMarket-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+h1{
+    font-size: 100px;
+    font-weight: 600;
+    color: #005587;
+}
+
+/*----- Interview Page ------*/
+.patty{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:1px;
+    padding-bottom: 100px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.patty-col{
+     flex-basis: 48%;
+    padding: 30px 2px;
+}
+.patty-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+
+iframe{
+    width: 45%;
+    height: 415px;
+    padding-right: 150px;
+}
+
+.interviewText{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:1px;
+    padding-bottom: 100px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.interviewText h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+    padding-bottom: 50px;
+}
+.interviewText p{
+    padding: 10px 8%;
+    text-align: center;
+}
+/*----- Analysis Page ------*/
+
+.techSnapshot{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1px 40px 100px 40px;
+    height: 120vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.techSnapshot-col{
+    flex-basis: 48%;
+    padding: 30px 20px;
+}
+.techSnapshot-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+.techSnapshot img{
+    width: 850px;
+}
+.training{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:1px;
+    padding-bottom: 100px;
+    height: 90vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.training-col{
+     flex-basis: 48%;
+    padding: 30px 40px;
+}
+.training-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+
+.training-col img{
+    width: 65%;
+}
+.laborTrends{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:1px;
+    padding-bottom: 100px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 253, 208, 1) 30%,rgba(255, 253, 208, 1) 70% ), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.laborTrends-col{
+     flex-basis: 48%;
+    padding: 30px 40px;
+}
+.laborTrends-col h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: #005587;
+}
+.laborTrends-col img{
+    width: 85%;
+}
